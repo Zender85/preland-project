@@ -65,7 +65,7 @@ ul {
 
 .logo {
 	position: absolute;
-	top: 0;
+	top: -80px;
 }
 
 .main-menu ul {
