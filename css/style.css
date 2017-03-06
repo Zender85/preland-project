@@ -31,6 +31,11 @@ img	{
 	max-width: 100%;
 }
 
+ul {
+	margin: 0;
+	padding: 0;
+}
+
 .container {
 	max-width: 1100px;
 	margin: 0 auto;
@@ -44,6 +49,102 @@ img	{
 	display: table;
 	clear: both;
 }
+
+	/* === HEADER === */
+
+.main-header {
+	background: url(../img/header.png);     
+	padding-top: 100px;
+}
+
+.main-header .container {
+	background: none;
+	box-shadow: none;
+}
+
+.logo {
+	position: absolute;
+}
+
+.main-menu ul {
+	border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+	font-size: 0;
+	background-image: linear-gradient(to top, #f0f0f0, #f8f8f8, #ffffff);
+	background-color: #fdfdfd;
+	overflow: hidden;
+}
+
+.main-menu li {
+    display: inline-block;
+    font-weight: bold;
+    color: #000;
+    border-right: 1px #d4d2d2 solid;
+}
+
+.main-menu li:last-child {
+	border-right: none;
+}
+
+.main-menu li:hover a {
+  color: #fff;
+  background-image: linear-gradient(to top, #363636, #3e3e3e, #444444);
+  background-color: #434343;
+  cursor: pointer;
+}
+
+.main-menu a {
+	display: inline-block;
+	color: #000;
+	text-transform: uppercase;
+	padding: 25px;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+.main-menu a.active {
+  background-image: linear-gradient(to top, #363636, #3e3e3e, #444444);
+  background-color: #434343;
+  color: #fff;
+
+}
+
+/*search*/
+/*#search {
+  float: right;
+  width: 235px;
+  height: 29px;
+}
+
+#search input {
+  float: right;
+  border: none;
+}
+
+#search .input {
+  width: 159px;
+  height: 28px;
+  padding: 0 37px 1px 15px;
+  background-color: #484848;
+  color: #fff;
+  font: 13px/28px Tahoma, Arial, sans-serif;
+  outline: none;
+  border-radius: 3px;
+}
+
+@-moz-document url-prefix() {
+  #search .input {
+    height: 27px;
+    padding-bottom: 2px;
+  }
+}
+
+#search .input:focus {
+  background-color: #E8E8E8;
+  background-position: 0 -29px;
+  color: #333;
+}*/
+	
 
 	/* === КОНТЕНТНАЯ ЧАСТЬ === */
 
