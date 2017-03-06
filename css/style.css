@@ -73,8 +73,22 @@ main {
 }
 
 .post-meta {
+	position: relative;
 	text-transform: uppercase;
-	color: #646464;
+	color: #929292;
+	font-weight: bold;
+	padding-left: 20px;
+	cursor: default;
+}
+
+.post-meta:before {
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	opacity: 0.5;
+	left: 0;
+	background-image: url('../img/calendar.png');
 }
 
 .article-annotation a {
