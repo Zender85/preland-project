@@ -1,3 +1,6 @@
+			
+	/* === ОСНОВНЫЕ СТИЛИ === */
+
 body {
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 12px;
@@ -18,6 +21,12 @@ h2 {
 	color: #646464;
 }
 
+h3 {
+	font-size: 
+	text-transform: uppercase;
+	color: #646464;	
+}
+
 img	{
 	max-width: 100%;
 }
@@ -35,6 +44,8 @@ img	{
 	display: table;
 	clear: both;
 }
+
+	/* === КОНТЕНТНАЯ ЧАСТЬ === */
 
 main {
 	float: left;
@@ -107,10 +118,17 @@ main {
 	bottom: 0;
 	background-image: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
 }
+
+	/* === САЙДБАР === */
+
 .sidebar {
 	float: right;
-	width: 35%;
+	width: 30%;
+	padding-top: 10px;
 }
+
+
+	/* === RESPONSIVE === */
 
 @media all and (max-width: 640px) {
 	.sidebar {
