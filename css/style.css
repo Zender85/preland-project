@@ -58,6 +58,7 @@ ul {
 }
 
 .main-header .container {
+	position: relative;
 	background: none;
 	box-shadow: none;
 }
