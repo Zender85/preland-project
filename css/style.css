@@ -19,6 +19,7 @@ h1 {
 h2 {
 	text-transform: uppercase;
 	color: #646464;
+	line-height: 30px;
 }
 
 h3 {
@@ -31,9 +32,16 @@ img	{
 	max-width: 100%;
 }
 
+p {
+	font-size: 16px;
+	color: #3d3d3d;
+	line-height: 21px;
+}
+
 ul {
 	margin: 0;
 	padding: 0;
+	list-style: none;
 }
 
 .container {
@@ -53,7 +61,10 @@ ul {
 	/* === HEADER === */
 
 .main-header {
-	background: url(../img/header.png);     
+	background: url(../img/header.png);
+	box-shadow: 0 0px 24px #949494;     
+	position: relative;
+	z-index: 2;
 }
 
 .main-header .container {
@@ -65,7 +76,8 @@ ul {
 
 .logo {
 	position: absolute;
-	top: 0;
+	top: 25px;
+	left: 20px;
 }
 
 .main-menu ul {
@@ -242,6 +254,109 @@ main {
 	float: right;
 	width: 30%;
 	padding-top: 10px;
+}
+
+.categories li {
+	margin-bottom: 10px;
+}
+
+.categories a {
+	position: relative;
+	text-decoration: none;
+	font-size: 16px;
+	color: #929292;
+	padding-left: 22px;
+	text-transform: uppercase;
+}
+
+.categories a:before {
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 14px;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	background-image: url('../img/arrow.png');
+}
+
+.categories li:hover a {
+	text-decoration: underline;
+}
+
+	/* === ABOUT === */
+.about-heading {
+	text-transform: none;
+}
+
+.about-disclamer-heading {
+	text-align: center;
+}
+.about-disclamer-text {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+}
+
+	/* === FOOTER === */
+
+.main-footer {
+	background-image: url('../img/footer-background.jpg');
+	background-size: cover;
+}
+
+.footer-menu ul {
+	text-align: center;
+}
+
+.footer-menu li {
+	display: inline-block;
+	padding: 20px 15px;
+}
+
+.footer-menu a {
+	display: inline-block;
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.footer-menu a:hover {
+	border-bottom: 1px dotted #fff;
+}
+
+.footer-menu a:after {
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 16px;
+	background-color: #fff;
+	bottom: 50%;
+	transform: translateY(50%);
+	right: -15px;
+}
+.footer-menu li:last-child a:after {
+	content: none;
+}
+
+.footer-logo {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 25px;
+}
+
+.main-footer .container {
+	background: none;
+	box-shadow: none;
+}
+
+.copyright {
+	text-align: center;
+	color: #dedede;
+	padding: 15px 0;
+	background: rgba(0, 0, 0, 0.2);
 }
 
 
