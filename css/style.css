@@ -54,10 +54,10 @@ ul {
 
 .main-header {
 	background: url(../img/header.png);     
-	padding-top: 100px;
 }
 
 .main-header .container {
+	padding-top: 100px;
 	position: relative;
 	background: none;
 	box-shadow: none;
@@ -65,7 +65,7 @@ ul {
 
 .logo {
 	position: absolute;
-	top: -80px;
+	top: 0;
 }
 
 .main-menu ul {
